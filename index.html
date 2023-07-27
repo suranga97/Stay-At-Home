@@ -10,31 +10,32 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Stay At Home</title>
 </head>
+
 <body class="max-w-[1960px] m-auto  bg-white dark:bg-black">
    
     <!-- navbar -->
     <nav class=" py-3 flex items-center mx-[50px] justify-between lg:mx-[100px]">
        
             <label class="relative block w-[300px] max-sm:w-[220px]">
-                <input class="block w-full py-1 pl-2 bg-white border shadrop-shadow-sm placeholder:italic placeholder:text-slate-400 border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search" type="text" name="search"/>
+                <input class="block w-full py-1 pl-2 bg-white rounded border-2 drop-shadow-sm border-gray-400 dark:border-sky-400 placeholder:italic placeholder:text-slate-400 focus:outline-none focus:border-sky-500  sm:text-sm" placeholder="Search" type="text" name="search"/>
                 <span class="absolute inset-y-0 right-0 flex items-center pr-2">
-                    <img class="w-6 opacity-50" src="assets/search-svgrepo-com.svg " alt="">
+                    <img class="w-6 cursor-pointer opacity-50" src="assets/search-svgrepo-com.svg " alt="">
                 </span>
             </label>
              <div class="flex flex-row items-center space-x-8 max-sm:space-x-3">
-                <ul class="pl-[50px] md:pl-0 md:flex md:space-x-8 z-[-1] md:m-1 md:items-center md:z-auto md:static absolute right-0 bg-white dark:bg-black w-full md:w-auto
-                top-[70px] transition-all ease-in md: dark:text-white md:bg-transparent md:dark:bg-transparent">
-                   <li class="my-6 md:my-0">
-                        <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600"> Home</a>
+                <ul class="px-[50px] pb-[10px] md:pb-0 md:px-0 md:flex md:space-x-4 z-[-1] md:m-1 md:items-center md:z-auto md:static absolute right-0 bg-white dark:bg-black w-full md:w-auto
+                top-[66px] transition-all ease-in md: dark:text-white md:bg-transparent md:dark:bg-transparent">
+                   <li class=" ">
+                        <a href="#" class="text-lg text-white font-semibold duration-500 block py-2 pl-3 pr-4 bg-blue-700 rounded"> Home</a>
                    </li>
-                   <li class="my-6 md:my-0">
-                       <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600"> Service</a>
+                   <li class=" ">
+                       <a href="#" class="text-lg font-semibold duration-500 click hover:text-cyan-600 dark:hover:bg-opacity-30 hover:bg-gray-200 block py-2 pl-3 pr-4 rounded"> Service</a>
                    </li>
-                   <li class="my-6 md:my-0">
-                       <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600"> About</a>
+                   <li class=" ">
+                       <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600 hover:bg-gray-200 dark:hover:bg-opacity-30 block py-2 pl-3 pr-4 rounded"> About</a>
                    </li>
-                   <li class="my-6 md:my-0">
-                       <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600"> Contact</a>
+                   <li class=" ">
+                       <a href="#" class="text-lg font-semibold duration-500 hover:text-cyan-600 dark:hover:bg-opacity-30 hover:bg-gray-200 block py-2 pl-3 pr-4 rounded" > Contact</a>
                    </li>
                </ul>
                <button id="theme-toggle" type="button" class="dark:text-white hover:text-cyan-600">
@@ -57,8 +58,8 @@
         function Menu(e){
             let list = document.querySelector('ul');
             
-            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[60px]'), list.classList.add('z-[+1]'),  list.classList.add('opacity-100'))
-            :( e.name = "menu" ,list.classList.remove ('top-[70px]'),list.classList.remove('opacity-100'),list.classList.remove('z-[+1]'))
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[60px]'), list.classList.add('z-[+99]'),  list.classList.add('opacity-100'))
+            :( e.name = "menu" ,list.classList.remove ('top-[70px]'),list.classList.remove('opacity-100'),list.classList.remove('z-[+99]'))
         }
     </script>
     
@@ -70,8 +71,8 @@
             <h1 class="font-bold text-white text-[0vmin] leading-none max-sm:text-[15vmin] ">STAY AT-<br>HOME</h1>
             <p class="my-5 text-2xl italic text-white max-sm:my-3 max-sm:text-[15px]">image from</p>
             <a target="-" href="https://sanmarksolutions.com/">
-                <button class="font-bold text-sky-600 bg-white w-[200px] h-[40px] cursor-pointer hover:rounded-md hover:shadow-lg hover:text-cyan-500
-                max-lg:w-[160] max-lg:h-[32px] max-md:w-[140px] max-md:h-[28] max-sm:font-semibold">LEARN MORE</button>
+                <button class="font-bold text-sky-600 bg-white  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300
+                w-[200px] h-[50px] max-lg:w-[160] max-lg:h-[38px] max-md:w-[140px] max-md:h-[30] max-sm:font-semibold">LEARN MORE</button>
             </a>
         </div>
         <img class="w-3/5 max-sm:hidden" src="assets/main image.png" alt="">
@@ -136,7 +137,7 @@
                 <a class="text-sky-600 font-medium text-[18px] max-sm:text-[14px]" target="-" href="https://www.freepik.com/">Freepik</a>
             </div>
             <a target="-" href="https://sanmarksolutions.com/">
-                <button class="bg-sky-800  h-[40px] w-[160px] mt-6 text-white cursor-pointer hover:shadow-md hover:shadow-sky-600 hover:bg-white hover:text-sky-600 hover:font-medium hover:rounded-md ">
+                <button class="bg-sky-800  h-[40px] w-[160px] mt-6 text-white cursor-pointer hover:shadow-md hover:shadow-sky-600 hover:dark:bg-white hover:dark:text-sky-600 hover: hover:rounded-md ">
                     LEARN MORE</button></a>
         </section>
     </div>
@@ -154,7 +155,7 @@
                 and impartial tribunal, in the determinationof his rights
                 and obligations and of any criminal charge against him.</p>
             <a target="-" href="https://sanmarksolutions.com/">
-                <button class="border-white border-solid border-2 w-[160px] h-[40px] cursor-pointer hover:border-teal-500 hover:shadow-md hover:shadow-gray-700 hover:bg-white hover:text-teal-500">LEARN MORE</button>
+                <button class="border-white border-solid border-2 w-[160px] h-[40px] cursor-pointer hover:border-sky-500 hover:shadow-md hover:shadow-sky-600 hover:bg-white hover:text-sky-400 ">LEARN MORE</button>
             </a>
         </div>
     </div>
@@ -164,11 +165,7 @@
         <img class="w-3/6 px-7 max-md:w-full max-md:px-0 max-sm:px-2" src="assets/image3.png" alt="">
         <section class="w-2/6 max-lg:w-3/6 max-md:pt-[50px] max-md:w-full max-sm:pt-[25px]">
             <h1 class="text-5xl max-lg:text-4xl max-sm:text-3xl dark:text-white"><b>Best Selling</b> Online Courses</h1>
-            <p class="flex font-semibold opacity-90 text-[18px] pt-6 pb-2 max-sm:text-[14px] max-sm:pt-3  dark:text-white"> No one shall be subjected to arbitrary arrest,
-                detention or exile. Everyone is entitled in full
-                equality to a fair and public hearing by an independent
-                and impartial tribunal, in the determination of his rights
-                and obligations and of any criminal charge against him.</p>
+            <p class="flex font-semibold opacity-90 text-[18px] pt-6 pb-2 max-sm:text-[14px] max-sm:pt-3  dark:text-white"> No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.</p>
             <div class="flex items-center">
                 <p class="font-medium opacity-90 text-[18px] pr-1 max-sm:text-[14px]  dark:text-white">image from </p>
                 <a class="text-sky-600 font-medium text-[18px] max-sm:text-[14px] " target="-" href="https://www.freepik.com/">Freepik</a>
@@ -191,7 +188,7 @@
                 and impartial tribunal, in the determinationof his rights
                 and obligations and of any criminal charge against him.</p>
             <a target="-" href="https://sanmarksolutions.com/">
-                <button class="border-white border-solid border-2 w-[160px] h-[40px] cursor-pointer hover:border-cyan-500 hover:shadow-md hover:shadow-gray-700 hover:bg-white hover:text-cyan-500">LEARN MORE</button>
+                <button class="border-white border-solid border-2 w-[160px] h-[40px] cursor-pointer hover:border-cyan-500 hover:shadow-md hover:shadow-cyan-800 hover:bg-white hover:text-cyan-500">LEARN MORE</button>
             </a>
         </div>
     </div>
@@ -248,39 +245,39 @@
         <section class="w-2/4 max-md:w-full">
         <div class="text-[35px] font-bold text-white">Registration</div>
         <form id="form" action="/" class="flex flex-col ">
-                <div class="flex flex-col w-full pt-2 ">
-                    <label class="text-[16px] text-white" for="FullName">Full Name</label>
-                    <input class="border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="text" placeholder="Enter Your User name" id="fullname" name="FullName">
+                <div class="flex flex-col w-full pt-3 pb-2 ">
+                    <label class="pb-2 text-[16px] text-white" for="FullName">Name</label>
+                    <input class="border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="text" placeholder="e.g., J." id="fullname" name="FullName">
                 </div>
-                <div class="flex flex-col w-full pt-2">
-                    <label class="text-[16px] text-white" for="Username">User Name</label>
+                <!-- <div class="flex flex-col w-full pt-3 pb-2">
+                    <label class="pb-2 text-[16px] text-white" for="Username">User Name</label>
                     <input class="border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="text" placeholder="Enter Your User name" id="username" name="Username">
                     <div class="error"></div>
-                </div>
-                <div class="flex flex-col w-full pt-2">
-                    <label class="text-[16px] text-white" for="email">E-mail</label>
-                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="email" placeholder="Enter Your e-mail" id="email" name="email " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div> -->
+                <div class="flex flex-col w-full pt-3 pb-2">
+                    <label class="pb-2 text-[16px] text-white" for="email">E-mail</label>
+                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="email" placeholder="e.g., example@mail.com" id="email" name="email " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                         Please enter a valid email address
                       </span>
                 </div>
-                <div class="flex flex-col w-full pt-2">
-                    <label class="text-[16px] text-white" for="PhoneNumber">Phone Number</label>
-                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="text" placeholder="Enter Your Phone Number" id="phonenumber" name="PhoneNumber" pattern="[+94]+[0-9].{10,}">
+                <div class="flex flex-col w-full pt-3 pb-2">
+                    <label class="pb-2 text-[16px] text-white" for="PhoneNumber">Phone Number</label>
+                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="text" placeholder="e.g., +9474 456 7891" id="phonenumber" name="PhoneNumber" pattern="[+94]+[0-9].{10,}">
                     <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                         Please enter a valid phone number
                       </span>
                     </div>
-                <div class="flex flex-col w-full pt-2">
-                    <label class="text-[16px] text-white" for="password">Password</label>
-                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="password" placeholder="Enter Your Password" id="password" name="Password" x pattern=".{8,}">
+                <div class="flex flex-col w-full pt-3 pb-2">
+                    <label class="pb-2 text-[16px] text-white" for="password">Password</label>
+                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="password" placeholder="Must have at least 8 characters" id="password" name="Password" x pattern=".{8,}">
                     <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                         At least 8 characters required
                       </span>
                 </div>
-                <div class="flex flex-col w-full pt-2">
-                    <label class="text-[16px] text-white" for="Password2">Confirm Password</label>
-                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="password" placeholder="Confirm Your Password" id="password2" name="Password2">
+                <div class="flex flex-col w-full pt-3 pb-2">
+                    <label class="pb-2 text-[16px] text-white" for="Password2">Confirm Password</label>
+                    <input class="peer border-solid border-2 rounded-[4px] text-[12px] p-[10px]" required type="password" placeholder="Re-enter Password" id="password2" name="Password2">
                     <span id="error" class="mt-2 text-sm text-red-500 "></span>
                 </div>
 
@@ -314,28 +311,28 @@
                 <div class="flex my-[14px] justify-between w-[35vmin] max-sm:w-[250px]">
                     <div class="flex items-center mb-4">
                         <input id="Gender-option-1" type="radio" name="countries" value="USA" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Gender-option-1" class="block ml-2 text-[16px] text-gray-900 dark:text-gray-300">
+                        <label for="Gender-option-1" class=" ml-2 text-[16px]">
                           Male
                         </label>
                       </div>
 
                       <div class="flex items-center mb-4">
                         <input id="Gender-option-2" type="radio" name="countries" value="Germany" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="Gender-option-2" class="block ml-2 text-[16px] text-gray-900 dark:text-gray-300">
+                        <label for="Gender-option-2" class="block ml-2 text-[16px]">
                           Female
                         </label>
                       </div>
                     
                       <div class="flex items-center mb-4">
                         <input id="Gender-option-3" type="radio" name="countries" value="Spain" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="Gender-option-3" class="block ml-2 text-[16px] text-gray-900 dark:text-gray-300">
+                        <label for="Gender-option-3" class="block ml-2 text-[16px]">
                           Other
                         </label>
                       </div>
                 </div>
             </div>
-            <div class="flex justify-center w-full">
-                <input class="w-[260px] h-[40px] rounded-[5px] bg-white  hover:shadow-md hover:shadow-gray-700 hover:text-teal-500 font-semibold max-sm:w-[200px]" type="submit" value="Register">
+            <div class="flex w-full">
+                <input class="w-[260px] h-[40px] hover:rounded-[5px] bg-white  hover:shadow-md hover:shadow-gray-700 hover:text-sky-600 font-semibold max-sm:w-[200px]" type="submit" value="Register">
              </div>
             </form>
         </section>    
@@ -359,8 +356,8 @@
                     <img class="h-[30px]" src="assets/twitter-154-svgrepo-com.svg" alt="">
                     <img class="h-[30px]" src="assets/instagram-167-svgrepo-com.svg" alt="">
                 </section>
-                <p class="pt-3">1 (234) 567-891</p>
-                <p class="">1 (234) 567-891</p>
+                <p class="contact mt-5 tracking-widest ">1 (234) 567-891</p>
+                <p class="contact tracking-widest">1 (234) 567-891</p>
             </section>
         </section>
         <section class="flex justify-center w-full pb-[50px]">

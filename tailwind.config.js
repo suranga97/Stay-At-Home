@@ -1,9 +1,11 @@
 module.exports = {
-    content:["./*html"],
+    content:["./*.html"],
     darkMode: 'class',
     theme:{
         extends:{},
     },
     Plugins:[],
-    // ...
+    // ...  
   };
+
+  
